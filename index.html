@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bljr javascript</title>
+</head>
+<body>
+    <label for="nilai">masukan sebuah nilai</label>
+    <input id="angka">
+    <button onclick="myfunction()">masukan nilai</button>
+    <p id="hasil"></p>
+    <script>
+        function myfunction(){
+            var angka = document.getElementById("angka").value;
+            var nilai = parseFloat(angka);
+        if(nilai > 89){
+            document.writeln("selamat anda memdapatkan nilai A");
+        }
+        else if(nilai > 79){
+            document.writeln("selamat anda medapatkan nilai B");
+        }
+        else if(nilai > 70){
+            document.writeln("selamat anda mendapatkan nilai C");
+        }
+        else{
+            document.writeln("Selamat anda mendapatkan Nilai D");
+        }
+        document.getElementById("hasil").innerHTML;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <button id="tombol">klik</button>
+
+    <script>
+const tombol = document.getElementById('tombol');
+
+tombol.addEventListener('click', function () {
+    
+    var randomColor = getRandomColor();
+    
+    tombol.style.backgroundColor = randomColor;
+    });
+    
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = o; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+    </script>
+</body>
+</html>

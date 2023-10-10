@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <input type="text" id="angka1">
+    <input type="text" id="angka2">
+    <button onclick="jumlah()">jumlahkan</button>
+    <p>hasil :</p>
+    <p id="hasil"></p>
+
+    <script>
+    function jumlah(){
+        var angka1 = parseFloat (document.getElementById("angka1").value);
+        var angka2 = parseFloat (document.getElementById("angka2").value);
+        var hasil = parseInt(angka1) * parseInt(angka2);
+        
+        document.getElementById("hasil").textContent = hasil;
+    }
+
+    </script>
+</body>
+</html>
